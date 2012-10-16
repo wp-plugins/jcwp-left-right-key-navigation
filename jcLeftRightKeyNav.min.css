@@ -1,0 +1,14 @@
+/**
+@author Jaspreet Chahal
+http://jaspreetchahal.org
+*/
+.jcNextPrevLink{position:fixed;top:40%;display:block;font-weight:700;font-family:arial;color:#333;text-decoration:none;width:70px;height:140px;background:rgba(100,100,100,0.4);z-index:999999;opacity:0.6;-webkit-transition-property:all;-moz-transition-property:all;-ms-transition-property:all;-o-transition-property:all;transition-property:all;-webkit-transition-duration:1s;-moz-transition-duration:1s;-ms-transition-duration:1s;-o-transition-duration:1s;transition-duration:1s}
+#prevLink .arrow{border-right:20px solid rgba(100,100,100,0.4);border-bottom:20px solid transparent;border-top:20px solid transparent;left:-20px}
+#nextLink{right:30px}
+#prevLink{left:30px}
+#nextLink .arrow{border-top:20px solid transparent;border-left:20px solid rgba(100,100,100,0.4);border-right:20px solid transparent;border-bottom:20px solid transparent;right:-40px}
+.jcNextPrevLink .arrow{width:0;font-size:0;height:0;position:absolute;top:49px}
+.jcNextPrevLink .title{-webkit-transform:rotate(270deg);-moz-transform:rotate(270deg);-ms-transform:rotate(270deg);-o-transform:rotate(270deg);transform:rotate(270deg);opacity:0.4;display:block;position:absolute;background:none;color:#000;bottom:0;width:140px;line-height:66px;height:66px;text-align:center;left:-40px;top:35px;font-size:24px}
+.jcNextPrevLink .description span{display:block;height:100px;overflow:hidden;width:180px;padding:20px}
+#nextLink .title{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);-o-transform:rotate(90deg);transform:rotate(90deg)}
+.jcNextPrevLink .description{width:0;line-height:30px;color:#FFF;background:rgba(31,31,31,0.7);font-family:"sans serif";overflow:hidden;position:absolute;top:0;left:70px;-webkit-transition-property:all;-moz-transition-property:all;-ms-transition-property:all;-o-transition-property:all;transition-property:all;-webkit-transition-duration:.2s;-moz-transition-duration:.2s;-ms-transition-duration:.2s;-o-transition-duration:.2s;transition-duration:.2s;-webkit-transition-delay:.5s;-moz-transition-delay:.5s;-ms-transition-delay:.5s;-o-transition-delay:.5s;transition-delay:.5s}
