@@ -1,9 +1,9 @@
 <?php
   /*
     Plugin Name: jcwp left right key navigation
-    Plugin URI: http://wordpress.org/extend/plugins/jcwp-left-right-key-navigation/
+    Plugin URI: http://jaspreetchahal.org
     Description: This plugin enables left and right key post navigation.
-    Author: Jas Chahal
+    Author: Jaspreet Chahal
     Version: 1.1
     Author URI: http://jaspreetchahal.org
     License: GPLv2 or later
