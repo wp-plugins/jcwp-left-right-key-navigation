@@ -1,5 +1,5 @@
 === Plugin Name ===
-Contributors: JasChahal
+Contributors: Jaspreet Chahal
 Plugin URI: http://jaspreetchahal.org/wordpress-left-right-key-navigation-plugin
 Donate link:  http://jaspreetchahal.org/wordpress-left-right-key-navigation-plugin
 Tags: Left, Right, Key navigation, arrow key navigation
