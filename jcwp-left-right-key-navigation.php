@@ -141,7 +141,7 @@
             <?php settings_fields("jcorglrkn-setting");?>
             <table class="widefat" style="width: 700px;" cellpadding="7">
                  <tr valign="top">
-                    <th scope="row">Disable Left Right Post Navigation</th>
+                    <th scope="row">Enable Left Right Post Navigation</th>
                     <td><input type="radio" name="jcorglrkn_plugin" <?php if(get_option('jcorglrkn_plugin') == "enable") echo "checked='checked'";?>
                             value="enable" 
                             /> Yes
