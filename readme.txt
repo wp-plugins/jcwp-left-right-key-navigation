@@ -4,9 +4,9 @@ Plugin URI: http://jaspreetchahal.org/wordpress-left-right-key-navigation-plugin
 Donate link:  http://jaspreetchahal.org/wordpress-left-right-key-navigation-plugin
 Tags: Left, Right, Key navigation, arrow key navigation
 Requires at least: 2.8
-Version: 1.1
+Version: 1.2
 Tested up to: 3.4.2
-Stable tag: 1.1
+Stable tag: 1.2
 
 This plugin enables left and right key post navigation. 
 
@@ -30,6 +30,9 @@ Visit my site http://jaspreetchahal.org to get help on this plugin or more preci
 
 = 1.1.0 =
 * Stable Release
+
+= 1.2.0 =
+* Fixed resolution issue and a spelling mistake 
 
 == FAQ ==
 

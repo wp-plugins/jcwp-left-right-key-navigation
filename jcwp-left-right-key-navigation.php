@@ -3,8 +3,8 @@
     Plugin Name: jcwp left right key navigation
     Plugin URI: http://jaspreetchahal.org
     Description: This plugin enables left and right key post navigation.
-    Author: JasChahal
-    Version: 1.1
+    Author: jaschahal
+    Version: 1.2
     Author URI: http://jaspreetchahal.org
     License: GPLv2 or later
     */
@@ -74,7 +74,7 @@
             <script type="text/javascript">
 
          jQuery(document).ready(function(){
-             if(screen.availWidth > <?php echo intval(get_option("jcorglrkn_minimum_screen_width")?intval(get_option("jcorglrkn_minimum_screen_width")):0)?>) {
+             if(jQuery(document).width() > <?php echo intval(get_option("jcorglrkn_minimum_screen_width")?intval(get_option("jcorglrkn_minimum_screen_width")):0)?>) {
                  jQuery().jcNextPrev({nextLink:"<?php echo $next_url?>",
                      nextLinkText:'<?php echo $next_url_title?>',
                      prevLink:'<?php echo $previous_url?>',
@@ -180,7 +180,7 @@
                                value="<?php echo get_option('jcorglrkn_next_post_label'); ?>"  style="padding:5px" size="40" maxlength="12"/></td>
                 </tr>
                 <tr valign="top">
-                    <th width="25%" scope="row">Previous post lavel</th>
+                    <th width="25%" scope="row">Previous post label</th>
                     <td><input type="text" name="jcorglrkn_previous_post_label"
                                value="<?php echo get_option('jcorglrkn_previous_post_label'); ?>"  style="padding:5px" size="40" maxlength="12"/></td>
                 </tr>
