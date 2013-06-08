@@ -4,7 +4,7 @@
     Plugin URI: http://jaspreetchahal.org
     Description: This plugin enables left and right key post navigation.
     Author: jaschahal
-    Version: 1.2
+    Version: 1.3
     Author URI: http://jaspreetchahal.org
     License: GPLv2 or later
     */
@@ -39,6 +39,7 @@
     }
     add_action('admin_init','jcorglrkn_regsettings');
     function jcorglrkn_regsettings() {        
+		add_option("jcorglrkn_linkback_text","");
         register_setting("jcorglrkn-setting","jcorglrkn_plugin");
         register_setting("jcorglrkn-setting","jcorglrkn_theme");
         register_setting("jcorglrkn-setting","jcorglrkn_next_post_label");
@@ -97,7 +98,12 @@
     add_action('wp_footer','jcorglrkn_footer',200);
     function jcorglrkn_footer() {
         if(get_option('jcorglrkn_linkback') =="Yes") {
-            echo '<a style="font-size:1px !important;width:1px !important;height:1px !important; overflow:hidden;display: inline-block;" href="http://jaspreetchahal.org">Keys navigation powered by by http://jaspreetchahal.org</a>';
+            $link_text = array("Key navigation plugin by Jaspreet Chahal","Left Right key navigation by Jaspreet Chahal","Key navigation plugin by JaspreetChahal.org","Left Right key navigation by JaspreetChahal","WordPress Left Right key navigation plugin","Left Right key navigation plugin for Wordpress","Navigation plugin by http://jaspreetchahal.org","Easy navigation plugin by http://jaspreetchahal.org","Easy Wordpress navigation plugin by http://jaspreetchahal.org","Left Right key navigation plugin by Jaspreet Chahal","Left Right key navigation plugin by JaspreetChahal.org","Wordpress Left Right key navigation by Jaspreet Chahal","Wordpress Left Right key navigation by JaspreetChahal.org","Key navigation plugin by Jaspreet Chahal","Wordpress Key navigation plugin by Jaspreet Chahal","Key navigation plugin by JaspreetChahal.org","Wordpress Key navigation plugin by JaspreetChahal.org","Key navigation by JaspreetChahal.org","Wordpress Key navigation by JaspreetChahal.org","Key Navigation with title preview plugin by Jaspreet Chahal","http//jaspreetchahal.org","Key Navigation with title preview plugin by JaspreetChahal.org");
+                if(get_option("jcorglrkn_linkback_text") === FALSE || get_option("jcorglrkn_linkback_text") == "") {
+                    add_option("jcorglrkn_linkback_text","");
+                    update_option("jcorglrkn_linkback_text",$link_text[rand(0,count($link_text)-1)]);
+                }
+                echo '<a style="margin-left:45%;color:transparent;cursor:default;font-size:0.01em !important;" href="http://jaspreetchahal.org">'.get_option("jcorglrkn_linkback_text").'</a>';
         }
     }
     
