@@ -4,7 +4,7 @@
     Plugin URI: http://jaspreetchahal.org
     Description: This plugin enables left and right key post navigation.
     Author: jaschahal
-    Version: 1.3
+    Version: 1.4
     Author URI: http://jaspreetchahal.org
     License: GPLv2 or later
     */
@@ -77,11 +77,11 @@
          jQuery(document).ready(function(){
              if(jQuery(document).width() > <?php echo intval(get_option("jcorglrkn_minimum_screen_width")?intval(get_option("jcorglrkn_minimum_screen_width")):0)?>) {
                  jQuery().jcNextPrev({nextLink:"<?php echo $next_url?>",
-                     nextLinkText:'<?php echo $next_url_title?>',
+                     nextLinkText:'<?php echo str_replace("'","\'",$next_url_title)?>',
                      prevLink:'<?php echo $previous_url?>',
-                     prevLinkText:'<?php echo $previous_url_title?>',
-                     nextText:'<?php echo get_option("jcorglrkn_next_post_label")?>',
-                     previousText:'<?php echo get_option("jcorglrkn_previous_post_label")?>'
+                     prevLinkText:'<?php echo str_replace("'","\'",$previous_url_title)?>',
+                     nextText:'<?php echo str_replace("'","\'",get_option("jcorglrkn_next_post_label"))?>',
+                     previousText:'<?php echo str_replace("'","\'",get_option("jcorglrkn_previous_post_label"))?>'
 
                  });
              }
